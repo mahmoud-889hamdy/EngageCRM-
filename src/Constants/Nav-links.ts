@@ -1,0 +1,1 @@
+ export const navLinks = ['features', 'pricing' , 'testimonils' , 'contact']
