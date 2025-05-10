@@ -2,7 +2,7 @@ import { FC, ReactNode } from "react";
 
 interface ButtonProps {
     variant?: "primary" | "secondary" | "outline";
-    isFullSize?: boolean
+    // isFullSize?: boolean
     children: ReactNode
 
 }
