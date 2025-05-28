@@ -11,25 +11,25 @@ export interface Feature {
 export interface FeatureBlock extends Feature {
    isReversed?: boolean;
 }
-export interface Pricing{
-   title:string,
-   description:string,
-   monthlyPrice:number,
-   annuallyPrice:number,
-   features:string[],
-   isMostPopular?:boolean,
-   glowPosition?:'right'| 'left',
+export interface Pricing {
+   title: string,
+   description: string,
+   monthlyPrice: number,
+   annuallyPrice: number,
+   features: string[],
+   isMostPopular?: boolean,
+   glowPosition?: 'right' | 'left',
 }
 
-export interface Testimonial{
+export interface Testimonial {
    imageUrl: string,
-   name:string,
-   role:string,
-   review:string;
+   name: string,
+   role: string,
+   review: string;
 }
-export interface FooterColumn{
-   title:string,
-   links:string[];
+export interface FooterColumn {
+   title: string,
+   links: string[];
 }
 
 export type PricingMode = 'monthly' | 'annually';

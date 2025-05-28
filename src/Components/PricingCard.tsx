@@ -17,7 +17,7 @@ const PricingCard: FC<PricingCardProps> = ({ annuallyPrice, description, feature
         <h1 className="font-extrabold text-slate-100 text-4xl">${mode == "monthly" ? monthlyPrice : annuallyPrice}
             <small className="text-base text-slate-300 font-semibold ps-1">/{mode === "monthly" ? "month" : "year"}</small>
         </h1>
-        <Button variant={isMostPopular ? "primary" : "secondary"} isFullSize>buy plan</Button>
+        <Button variant={isMostPopular ? "primary" : "secondary"} >buy plan</Button>
         <ul className="space-y-4">
             {features.map((feature, index) => (
                 <li key={index} className="flex items-center gap-4">

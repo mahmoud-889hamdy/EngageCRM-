@@ -5,7 +5,7 @@ import { footerColumns } from '@/Constants/Footer-Links';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear()
-    const socialLinks: ReactNode = [
+    const socialLinks: ReactNode[] = [
         <Facebook key="f" className='social-link' />,
         <Instagram key="i" className='social-link' />,
         <Twitter key="t" className='social-link' />,
@@ -29,21 +29,21 @@ const Footer = () => {
 
             </div>
             <div className='basis-2/3 grid grid-cols-2 lg:grid-cols-4 pt-8 lg:pt-0 lg:ps-8'>
-                    {footerColumns.map((col,index)=>(
-                        <article key={index} className='capitalize flex flex-col md:text-center lg:text-start'>
+                {footerColumns.map((col, index) => (
+                    <article key={index} className='capitalize flex flex-col md:text-center lg:text-start'>
                         <h2 className='font-bold lg:text-lg text-slate-100 mb-6'>{col.title}</h2>
                         <ul>
-                            {col.links.map((link,index)=>(
-                                    <li key={index} className='font-normal pb-3 hover:text-sky-600 hover:ps-1 transition-all cursor-pointer'>{link}</li>
+                            {col.links.map((link, index) => (
+                                <li key={index} className='font-normal pb-3 hover:text-sky-600 hover:ps-1 transition-all cursor-pointer'>{link}</li>
                             ))}
                         </ul>
-                        </article>
-                    ))}
+                    </article>
+                ))}
             </div>
         </div>
         <div className=' container border-t border-slate-700'>
             <p className='capitalize pt-4 text-center lg:text-start'>
-                {`© ${currentYear}ocean, inc. all rights reserved.`}
+                {`© ${currentYear} ocean, inc. all rights reserved.`}
             </p>
         </div>
     </footer>
